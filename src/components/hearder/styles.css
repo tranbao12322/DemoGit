@@ -1,0 +1,75 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header container */
+.header {
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Icon section (top area) */
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.icon h1 {
+  font-size: 24px;
+  color: #333;
+  flex: 1 1 100%;
+}
+
+/* Smaller links/items */
+.icon h2,
+.icon h3 {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon h2:hover,
+.icon h3:hover {
+  color: #ba4faa;
+}
+
+/* Navigation menu (bottom area) */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.menu h3 {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu h3:hover {
+  color: #007bff;
+}
+.custom-input {
+
+  min-width: 180px;
+  max-width: 300px;
+  border-radius: 5px;
+}
+.logo {
+  color: #007bff;
+}
+
+
