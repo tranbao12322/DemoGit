@@ -1,4 +1,5 @@
 /* Toàn bộ login form */
+@import "tailwindcss";
 .login {
   max-width: 350px;
   margin: 100px auto;
@@ -63,4 +64,9 @@
 
 .forgot-btn:hover {
   color: #0056b3;
+}
+.hover\:bg-sky-700 {
+  &:hover {
+    background-color: var(--color-sky-700);
+  }
 }
