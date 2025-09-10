@@ -1,1 +1,43 @@
 @import "tailwindcss";
+/* Đặt background toàn màn hình */
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Đổi phong cách chữ cho 404 */
+.not-found h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ff6347; /* Màu đỏ cam */
+  margin-bottom: 20px;
+}
+
+/* Thêm thông báo thêm cho người dùng */
+.not-found p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Thêm một nút quay lại trang chủ */
+.not-found button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.not-found button:hover {
+  background-color: #ff4500; /* Màu khi hover */
+}
