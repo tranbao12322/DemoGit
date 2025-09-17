@@ -3,7 +3,6 @@ import './Cart.css';
 import sanpham from '../List';
 import { useNavigate } from 'react-router-dom';
 
-// ======= Utils =======
 const cleanPrice = (priceString) => {
   return parseFloat(priceString.replace(/[^\d]/g, '')) || 0;
 };
@@ -11,7 +10,6 @@ const cleanPrice = (priceString) => {
 const formatPrice = (num) => {
   return num.toLocaleString('vi-VN') + '₫';
 };
-// =====================
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
