@@ -55,16 +55,16 @@ function Header() {
       {/* Logo */}
       <div className="logo">
         <Title level={3} style={{ color: 'green', margin: 0 }}>
-          BShop Điện tử & Robot
+          HShop Điện tử & Robot
         </Title>
       </div>
 
       {/* Thanh công cụ phía trên */}
       <div className="icon">
         <DanhMucMenu />
-        <h3>Thông tin Liên Hệ</h3>
-        <h3>Hướng dẫn mua hàng</h3>
-        <h3>Giỏ hàng sản phẩm</h3>
+        <Link to="/lien-he"><h3>Thông tin liên hệ</h3></Link>
+        <Link to="/huong-dan-mua-hang"><h3>Hướng dẫn mua hàng</h3></Link>
+        <Link to="/cart"><h3>Giỏ hàng sản phẩm</h3></Link>
 
         {/* Tìm kiếm sản phẩm bằng dropdown autocomplete */}
         <AutoComplete
@@ -90,9 +90,8 @@ function Header() {
       {/* Menu chính */}
       <div className="menu">
         <Link to="/"><h3>Trang Chủ</h3></Link>
-        <h3>Bài Viết</h3>
-        <h3>Bshop Channel</h3>
-        <h3>Đối Tác</h3>
+        <Link to="/Hshop-chanel"><h3>Hshop Channel</h3></Link>
+        <Link to="/Doi-Tac"><h3>Đối Tác</h3></Link>
         <h3>Giới thiệu</h3>
       </div>
 

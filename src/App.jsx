@@ -9,6 +9,12 @@ import { Routes, Route } from 'react-router-dom';
 import Body from './Body.jsx';
 import Shopping from './shopping.jsx'
 import Canhan from './components/thongtincanhan.jsx';
+import ContactPage from './components/thongtinlienhe/ContactPage.jsx'
+import HuongDanMuaHang from './components/huongdanmuahang/HuongDanMuaHang.jsx'
+import DoiTac from './components/DoiTac/DoiTac.jsx'
+import HshopChannel from './components/Hshopchanel/HshopChannel.jsx'
+import CartPage from './components/cart/cart.jsx'
+import CheckoutPage from './components/checkout/Checkout.jsx'
 
 const routes = [
   {
@@ -53,7 +59,43 @@ const routes = [
     </div>
   ),
   isPrivate: false
-}
+},
+  {
+    id:"contacpage",
+    path:"/Lien-He",
+    element: <ContactPage />,
+    isPrivate: false
+  },
+  {
+    id:"HuongdanMH",
+    path:"/huong-dan-mua-hang",
+    element: <HuongDanMuaHang />,
+    isPrivate: false
+  },
+  {
+    id:"DoiTac",
+    path:"/Doi-Tac",
+    element: <DoiTac />,
+    isPrivate: false
+  },
+  {
+    id:"Hshopchanel",
+    path:"/Hshop-chanel",
+    element: <HshopChannel />,
+    isPrivate: false
+  },
+  {
+    id:"card",
+    path:"/cart",
+    element: <CartPage />,
+    isPrivate: false
+  },
+  {
+    id:"checkout",
+    path:"/checkout",
+    element: <CheckoutPage />,
+    isPrivate: false
+  },
 
 
 ]

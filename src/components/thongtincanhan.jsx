@@ -12,7 +12,7 @@ const Canhan = () => {
 
   // Kiểm tra nếu người dùng chưa đăng nhập thì chuyển hướng về trang đăng nhập
   if (!isAuthenticated) {
-    navigate('/signin');
+    navigate('/login');
     return null;
   }
 

@@ -3,6 +3,7 @@ import "./shopping.css";
 import { useState } from "react";
 import {Routes, Route, Outlet, useParams} from 'react-router';
 import sanpham from './components/List';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Shopping = () => {
@@ -40,7 +41,7 @@ const Shopping = () => {
                 </div>
             </div>
             <div className="action-buttons">
-                <button>Thêm vào giỏ hàng</button>
+                <Link to ="/cart"><button>Thêm vào giỏ hàng</button> </Link>
                 <button>Mua ngay</button>
             </div>
             </div>

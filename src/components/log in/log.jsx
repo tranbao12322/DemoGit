@@ -38,8 +38,9 @@ function Login() {
   
     if(isAuthenticated){ 
       navigate('/ttcn') 
-    }
+      console.log(navigate)
 
+    }
 
   return (
     <div className="login">

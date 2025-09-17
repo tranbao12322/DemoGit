@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
+import sanpham from '../List';
 
 
 
@@ -21,12 +22,6 @@ const DanhMucMenu = () => {
         style={{ width: 256 }}
       >
         <Menu.SubMenu key="sub1" icon={<MenuOutlined />} title="Danh mục sản phẩm">
-          {/* Mục "Thương Hiệu Phân Phối" có một submenu */}
-          <Menu.SubMenu key="sub3" title="Thương Hiệu Phân Phối">
-            <Menu.Item key="3-1">Arduino (Original - Made In Italy)</Menu.Item>
-            <Menu.Item key="3-2">Waveshare</Menu.Item>
-            <Menu.Item key="3-3">DFRobot</Menu.Item>
-          </Menu.SubMenu>
           <Menu.SubMenu key="sub4" title="Arduino">
             <Menu.Item key="4-1">Arduino Board</Menu.Item>
             <Menu.Item key="4-2">Arduino Shield</Menu.Item>
@@ -59,6 +54,7 @@ const DanhMucMenu = () => {
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
+      
     </div>
   );
 };
