@@ -13,6 +13,10 @@ const items = [
     key: '2',
     label: <Link to="/signin">Đăng Ký</Link>,
   },
+  {
+    key: '3',
+    label: <Link to="/ttcn">TT Cá Nhân</Link>,
+  },
 ];
 
 const DropdownMenu = () => {

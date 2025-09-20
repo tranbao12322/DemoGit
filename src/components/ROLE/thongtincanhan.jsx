@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useUser from '../hooks/useUser';
+import useUser from '../../hooks/useUser';
 import { useNavigate } from 'react-router';
 import './canhan.css'
 

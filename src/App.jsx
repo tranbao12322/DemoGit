@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/hearder/head'
 import Login from './components/log in/log'
@@ -8,15 +5,20 @@ import Apple from './components/sign up/sign'
 import { Routes, Route } from 'react-router-dom';
 import Body from './Body.jsx';
 import Shopping from './shopping.jsx'
-import Canhan from './components/thongtincanhan.jsx';
+import Canhan from './components/ROLE/thongtincanhan.jsx';
 import ContactPage from './components/thongtinlienhe/ContactPage.jsx'
 import HuongDanMuaHang from './components/huongdanmuahang/HuongDanMuaHang.jsx'
 import DoiTac from './components/DoiTac/DoiTac.jsx'
 import HshopChannel from './components/Hshopchanel/HshopChannel.jsx'
 import CartPage from './components/cart/cart.jsx'
 import CheckoutPage from './components/checkout/Checkout.jsx'
+import ProductListPage from './ProductListPage.jsx';
+import AdminDashboard from './components/ROLE/AdminDashboard.jsx';
+
+const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
 const routes = [
+  
   {
     id: "home",
     path: "/",
@@ -48,6 +50,7 @@ const routes = [
     element: <Canhan />,
     isPrivate: true
   },
+
   {
   id: "notfound",
   path: "*",
@@ -96,9 +99,18 @@ const routes = [
     element: <CheckoutPage />,
     isPrivate: false
   },
+  
+  {
+    id:"SP",
+    path:"/sanpham/:category",
+    element: <ProductListPage />,
+    isPrivate: false
+  },
+
 
 
 ]
+
 
 function App() {
 

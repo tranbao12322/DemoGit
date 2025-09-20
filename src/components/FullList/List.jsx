@@ -1,6 +1,7 @@
 const ArduinoBoard = [
     {
         id: '1.1',
+        category: 'arduino-board',
         name: "Mạch phát triển Teensy 4.1 (Arduino Compatible)",
         price: "1.269.000₫",
         description: 'Mạch phát triển Teensy 4.1 (Arduino Compatible) sử dụng vi điều khiển ARM Cortex-M7 600MHz...',
@@ -8,6 +9,7 @@ const ArduinoBoard = [
     },
     {
         id: '1.2',
+        category: 'arduino-board',
         name: "Mạch phát triển Teensy 4.0 (Arduino Compatible)",
         price: "1.069.000₫",
         description: 'Mạch phát triển Teensy 4.0 (Arduino Compatible) sử dụng vi điều khiển ARM Cortex-M7 600MHz...',
@@ -15,6 +17,7 @@ const ArduinoBoard = [
     },
     {
         id: '1.3',
+        category: 'arduino-board',
         name: "Arduino Opta RS485 microPLC (Made in Italy)",
         price: "5.499.000₫",
         description: 'Arduino Opta RS485 microPLC là một bộ điều khiển lập trình nhỏ gọn...',
@@ -22,6 +25,7 @@ const ArduinoBoard = [
     },
     {
         id: '1.4',
+        category: 'arduino-board',
         name: "Arduino Ethernet Shield 2 (Made in Italy)",
         price: "1.199.000₫",
         description: 'Arduino Ethernet Shield 2 chính hãng cho phép kết nối Arduino với mạng Ethernet...',
@@ -29,6 +33,7 @@ const ArduinoBoard = [
     },
     {
         id: '1.5',
+        category: 'arduino-board',
         name: "Arduino UNO R4 Minima (Made in Italy)",
         price: "899.000₫",
         description: 'Arduino UNO R4 Minima là phiên bản nhỏ gọn của Arduino UNO R4...',
@@ -37,6 +42,7 @@ const ArduinoBoard = [
 
     {
         id: '1.6',
+        category: 'arduino-board',
         name: "Mạch Seeed Studio XIAO ESP32S3 Sense",
         price: "329.000₫",
         description: 'Mạch Seeed Studio XIAO ESP32S3 Sense tích hợp Wi-Fi, BLE, camera OV2640 và microphone...',
@@ -46,6 +52,7 @@ const ArduinoBoard = [
 const ArduinoShield = [
     {
         id: '2.1',
+        category: 'arduino-shield',
         name: "Arduino Ethernet Shield 2 chính hãng (Original - Made in Italy)",
         price: "945.000₫",
         description: '  Arduino Ethernet Shield 2 chính hãng cho phép kết nối Arduino với mạng Ethernet...',
@@ -53,6 +60,7 @@ const ArduinoShield = [
     },
     {
         id: '2.2',
+        category: 'arduino-shield',
         name: "Mạch MakerEdu Shield for Vietduino",
         price: "115.000₫",
         description: 'Mạch MakerEdu Shield for Vietduino là một bo mở rộng được thiết kế dành riêng cho các bo mạch vi điều khiển của Vietduino...',
@@ -60,6 +68,7 @@ const ArduinoShield = [
     },
     {
         id: '2.3',
+        category: 'arduino-shield',
         name: "Mạch DMX Shield (Arduino Compatible)",
         price: "550.000₫",
         description: 'Mạch DMX Shield (Arduino Compatible) là một bo mở rộng cho các bo mạch Arduino, cho phép giao tiếp với các thiết bị sử dụng giao thức DMX512...',
@@ -67,6 +76,7 @@ const ArduinoShield = [
     },
     {
         id: '2.4',
+        category: 'arduino-shield',
         name: "Mạch GSM GPRS SIM800DS Shield (Arduino Compatible)",
         price: "265.000₫",
         description: 'Mạch GSM GPRS SIM800DS Shield (Arduino Compatible) là một bo mở rộng cho các bo mạch Arduino, cho phép giao tiếp với mạng di động GSM/GPRS...',
@@ -74,15 +84,17 @@ const ArduinoShield = [
     },
     {
         id: '2.5',
+        category: 'arduino-shield',
         name: "Mạch Grove Base Shield V2 (Arduino Compatible)",
         price: "135.000₫",
         description: 'Mạch Grove Base Shield V2 (Arduino Compatible) là một bo mở rộng cho các bo mạch Arduino, cung cấp giao diện kết nối dễ dàng với các cảm biến và mô-đun Grove...',
         Image: "https://bizweb.dktcdn.net/100/522/662/products/grove-base-shield-v2-3-29b61f0e6f934964bdbe86315935a651-f2013bba-3825-4ba2-895a-2edf9f099ad0-2eaea9c1-e5ba-43d3-9da5-287a143bde05.jpg?v=1723030635010",
     },
 ];
-const PhụkiệnArduino = [
+const PhukienArduino = [
     {
         id: '3.1',
+        category: 'phu-kien-arduino',
         name: "Pin dự phòng USB-C 5VDC 2A 5000mAh Mini Power Bank",
         price: "145.000₫",
         description: 'Pin dự phòng USB-C 5VDC 2A 5000mAh Mini Power Bank là một thiết bị nhỏ gọn và tiện lợi để sạc các thiết bị di động của bạn khi đang di chuyển...',
@@ -90,6 +102,7 @@ const PhụkiệnArduino = [
     },
     {
         id: '3.2',
+        category: 'phu-kien-arduino',
         name: "Vỏ Mica Arduino Uno Acrylic Case (Trong Suốt)",
         price: "75.000₫",
         description: 'Vỏ Mica Arduino Uno Acrylic Case (Trong Suốt) là một vỏ bảo vệ được làm từ chất liệu mica trong suốt, thiết kế dành riêng cho bo mạch Arduino Uno...',
@@ -99,6 +112,7 @@ const PhụkiệnArduino = [
 const JetsonNano = [
     {
         id: '4.1',
+        category: 'nvidia-jetson',
         name: "Máy tính nhúng AI NVIDIA Jetson AGX Orin 64GB Developer Kit (275 TOPS)",
         price: "59.990.000₫",
         description: 'Máy tính nhúng AI NVIDIA Jetson AGX Orin 64GB Developer Kit là một nền tảng phát triển mạnh mẽ được thiết kế để xây dựng các ứng dụng trí tuệ nhân tạo và máy học...',
@@ -106,6 +120,7 @@ const JetsonNano = [
     },
     {
         id: '4.2',
+        category: 'nvidia-jetson',
         name: "UGV Rover Open-Source 6 Wheels 4WD AI Robot For Jetson Orin Series Boards",
         price: "9.720.000₫",
         description: 'UGV Rover Open-Source 6 Wheels 4WD AI Robot For Jetson Orin Series Boards là một robot di động có khả năng tự động di chuyển và thực hiện các nhiệm vụ thông minh...',
@@ -113,6 +128,7 @@ const JetsonNano = [
     },
     {
         id:'4.3',
+        category: 'nvidia-jetson',
         name:"JetRacer Professional Version ROS AI Kit, Lidar Mapping, Vision Processing Powered by Jetson Nano",
         price:"8.100.000₫",
         description: "",
@@ -122,7 +138,7 @@ const JetsonNano = [
 const sanpham = [
     ...ArduinoBoard,
     ...ArduinoShield,
-    ...PhụkiệnArduino,
+    ...PhukienArduino,
     ...JetsonNano,
 ];
 

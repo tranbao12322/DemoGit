@@ -5,7 +5,7 @@ import { SearchOutlined } from '@ant-design/icons';
 import { AutoComplete, Typography, Card, Row, Col, Input } from 'antd';
 import DanhMucMenu from '../menu/DropMenu';
 import { Link, useNavigate } from 'react-router-dom';
-import sanpham from '../List';
+import sanpham from '../FullList/List';
 
 const { Title } = Typography;
 const { Meta } = Card;

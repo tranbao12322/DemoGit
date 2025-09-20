@@ -1,8 +1,6 @@
-import React from 'react';
 import './ProductList.css';
-import { useState } from 'react';
 import { useNavigate } from "react-router";
-import  sanpham from './components/List';
+import  sanpham from './components/FullList/List';
 
 const ProductList = () => {
     const navigate = useNavigate();
