@@ -13,7 +13,13 @@ import HshopChannel from './components/Hshopchanel/HshopChannel.jsx'
 import CartPage from './components/cart/cart.jsx'
 import CheckoutPage from './components/checkout/Checkout.jsx'
 import ProductListPage from './ProductListPage.jsx';
-import AdminDashboard from './components/ROLE/AdminDashboard.jsx';
+import Dashboard from './components/ROLE/Dashboard.jsx';
+import AdminPage from './components/ROLE/AdminProductManager.jsx';
+import Unauthorized from './components/ROLE/Unauthorized.jsx';
+import PrivateRoute from './routes/PrivateRoute.jsx';
+import RoleBasedRoute from './routes/RoleBasedRoute';
+import AdminProductManager from './components/ROLE/AdminProductManager.jsx';
+
 
 const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
@@ -107,7 +113,36 @@ const routes = [
     isPrivate: false
   },
 
+  {
+  id: "dashboard",
+  path: "/dashboard",
+  element: (
+    <PrivateRoute>
+      <Dashboard />
+    </PrivateRoute>
+  ),
+  isPrivate: true
+},
 
+{ 
+  id: "unauthorized",
+  path:"/unauthorized", 
+  element: <Unauthorized />,
+  isPrivate: true
+},
+
+{
+  id: "admin-product-manager",
+  path: "/admin/products",
+  element: (
+    <PrivateRoute>
+      <RoleBasedRoute allowedRoles={['admin']}>
+        <AdminProductManager />
+      </RoleBasedRoute>
+    </PrivateRoute>
+  ),
+  isPrivate: true
+},
 
 ]
 

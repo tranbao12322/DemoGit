@@ -15,7 +15,7 @@ const items = [
   },
   {
     key: '3',
-    label: <Link to="/ttcn">TT Cá Nhân</Link>,
+    label: <Link to="/dashboard">TT Cá Nhân</Link>,
   },
 ];
 

@@ -1,0 +1,58 @@
+.edit-product {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.edit-product input[type="text"],
+.edit-product input[type="number"],
+.edit-product textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.edit-product input[type="text"]:focus,
+.edit-product input[type="number"]:focus,
+.edit-product textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.edit-product textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.edit-product button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-product button:hover {
+  background-color: #357ABD;
+}
+
+.edit-product button:last-child {
+  background-color: #e74c3c;
+  margin-left: 12px;
+}
+
+.edit-product button:last-child:hover {
+  background-color: #c0392b;
+}

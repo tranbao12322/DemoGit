@@ -1,57 +1,23 @@
-// import { useState } from 'react';
-// import { useEffect } from 'react';
-
-// const useUser = () => {
-//   const [isAuthenticated, setIsAuthenticated] = useState(false);
-//   const [user, setUser] =  useState({});
-//   useEffect(() => {
-//     // Kiểm tra trạng thái đăng nhập từ localStorage hoặc API
-  
-//     const localisAuthenticated = localStorage.getItem('isAuthenticated')
-//     const user = localStorage.getItem('user')
-//     if(localisAuthenticated!='undefined')
-//       setIsAuthenticated(JSON.parse(localisAuthenticated))
-//     if(user!='undefined')
-//       setUser(JSON.parse(user))
-//   }, []);
-//   const setLoginUser = (inputUser)=>{
-//     console.log(inputUser)
-//     setUser(inputUser)
-//     setIsAuthenticated(true)
-//     localStorage.setItem('isAuthenticated',true)
-//     localStorage.setItem('user',JSON.stringify(inputUser))
-    
-//   }
-//   const logoutUser = () => {
-//     setIsAuthenticated(false);
-//     setUser({});
-//     localStorage.removeItem('isAuthenticated');
-//     localStorage.removeItem('user');
-//   };
-//   return {isAuthenticated,user,setLoginUser, logoutUser};
-// }
-
-// export default useUser
-
-
-
 import { useState, useEffect } from 'react';
 
 const useUser = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null); // để dễ kiểm tra null
+  const [loading, setLoading] = useState(true); // trạng thái đang tải
 
   useEffect(() => {
     const localIsAuthenticated = localStorage.getItem('isAuthenticated');
     const localUser = localStorage.getItem('user');
 
-    if (localIsAuthenticated === 'true') {
+    if (localIsAuthenticated === 'true' && localUser) {
       setIsAuthenticated(true);
+      setUser(JSON.parse(localUser));
+    } else {
+      setIsAuthenticated(false);
+      setUser(null);
     }
 
-    if (localUser) {
-      setUser(JSON.parse(localUser));
-    }
+    setLoading(false); // Đã đọc xong localStorage
   }, []);
 
   const setLoginUser = (inputUser) => {
@@ -62,14 +28,13 @@ const useUser = () => {
   };
 
   const logoutUser = () => {
-    setUser({});
+    setUser(null);
     setIsAuthenticated(false);
     localStorage.removeItem('isAuthenticated');
     localStorage.removeItem('user');
   };
 
-  return { isAuthenticated, user, setLoginUser, logoutUser };
+  return { isAuthenticated, user, loading, setLoginUser, logoutUser };
 };
 
 export default useUser;
-

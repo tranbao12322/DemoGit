@@ -101,7 +101,8 @@ function Apple() {
     username: '',
     email: '',
     phone: '',
-    password: ''
+    password: '',
+    role:'user'
   });
   
   const navigate = useNavigate();
@@ -142,7 +143,8 @@ function Apple() {
       username: '',
       email: '',
       phone: '',
-      password: ''
+      password: '',
+      role:'user'
     });
 
     navigate('/login');
